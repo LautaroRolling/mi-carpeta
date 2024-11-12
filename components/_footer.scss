@@ -1,0 +1,43 @@
+.logo-redes, .logo-redes-footer {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
+    outline: none;
+    }
+    
+    footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: darkgrey;
+    }
+    
+    footer div {
+    flex: 1 1 200px;
+    margin: 10px;
+    }
+    
+    .informacion-necesaria {
+    display: flex;
+    align-items: center;
+    
+    &:hover {
+        background-color: lighten($primary-color, 40%);
+    }
+    
+    p {
+        margin: 0;
+        padding-left: 10px;
+        font-family: Arial, sans-serif;
+        display: block;
+    }
+    }
+    
+    .img-informacion-necesaria {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    }

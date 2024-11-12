@@ -1,0 +1,62 @@
+$primary-color: blue;
+$secondary-color: rgb(255, 255, 255);
+$hover-color: darkblue;
+$button-padding: 10px 20px;
+$transition-time: 0.3s ease;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+h1 {
+font-family: Arial, Helvetica, sans-serif;
+animation: fadeIn 1s ease-in-out;
+}
+
+.titulo {
+font-family: 'Arial', sans-serif;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .productos-iniciales {
+    grid-template-columns: 1fr;
+    }
+
+    .drop-principal, .coleccion-imagen {
+    width: 100%;
+    height: auto;
+    }
+
+    .boton-principal {
+    width: 80%;
+    }
+
+    footer {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    }
+
+    .todo-lo-destacado {
+    width: 100%;
+    }
+}
