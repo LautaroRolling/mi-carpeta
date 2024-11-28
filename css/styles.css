@@ -53,6 +53,11 @@ section .seccion-preguntas {
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.seccion-preguntas ul{
+  text-decoration: none;
+  list-style-type: none;
 }
 
 section ul .whtsapp {
@@ -85,7 +90,21 @@ main section article h3 {
 .drop-principal:hover {
   transform: scale(1.05);
 }
+.about-us-imagen {
+  width: 100%;
+  max-width: 500px; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
 
+.about-us-imagen:hover {
+  transform: scale(1.05);
+}
 .boton, .boton-principal {
   background-color: rgb(255, 255, 255);
   color: blue;
@@ -241,6 +260,10 @@ footer div {
   .drop-principal, .coleccion-imagen {
     width: 100%;
     height: auto;
+  }
+  .about-us-imagen {
+    max-width: 90%;
+    margin-bottom: 20px;
   }
   .boton-principal {
     width: 80%;

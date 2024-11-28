@@ -1,0 +1,33 @@
+.form-contacto {
+    background-color: $color-light;
+    padding: $spacing-lg;
+    border-radius: 8px;
+    box-shadow: $shadow;
+}
+
+.form-contacto label {
+    display: block;
+    margin-bottom: $spacing-sm;
+}
+
+.form-contacto input,
+.form-contacto select,
+.form-contacto textarea {
+    width: 100%;
+    padding: $spacing-sm;
+    margin-bottom: $spacing-lg;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-contacto input[type="submit"] {
+    background-color: #0dac30;
+    color: $secondary-color;
+    border: none;
+    cursor: pointer;
+    transition: background-color $transition-time;
+
+    &:hover {
+    background-color: #1ac840;
+    }
+}

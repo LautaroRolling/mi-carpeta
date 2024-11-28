@@ -1,0 +1,58 @@
+.drop-principal {
+    width: 100%; 
+    height: 500px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: $spacing-sm;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    transition: transform 0.2s;
+    
+
+    .drop-principal &:hover {
+    transform: scale(1.05); 
+    }
+}
+
+main section div img, .coleccion-imagen {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.about-us-imagen {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-us-imagen:hover {
+    transform: scale(1.05);
+}
+
+main .productos-iniciales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-lg;
+    align-items: center;
+
+    div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: $spacing-sm;
+    text-align: center;
+    transition: transform $transition-time;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    }
+}

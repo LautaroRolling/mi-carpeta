@@ -17,6 +17,10 @@ section .seccion-preguntas {
     justify-content: center;
     align-items: center;
     }
+    .seccion-preguntas ul{
+        text-decoration: none;
+        list-style-type: none;
+    }
     
     section ul .whtsapp {
     align-items: center;
